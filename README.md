@@ -1,4 +1,4 @@
-![](https://github.com/FilippoGuardassoni/auto_sales/blob/main/img/headerheader.jpeg)
+![](https://github.com/FilippoGuardassoni/auto_sales/blob/main/img/headerheader.webp)
 
 ## Auto Car Sales Demand, Prices and Income: A Statistical Study Using Functional Data Analysis and Time Series.
 
@@ -93,20 +93,15 @@ We collected the data as:
 ```
 
 # Results and evaluation
-The test set was created randomly using sample.split function from R package.
-The Random Forest once again performed better for the classification. The overall results are reported below:
-
-
-<img width="617" alt="Screenshot 2023-05-18 at 19 45 22" src="https://github.com/FilippoGuardassoni/spotify_hitsong/assets/85356795/b420dcdd-5dbe-4170-81b7-cfe1797d705c">
-
-All the models predicted the test set with an incredibly high consistency, showing almost no overfitting over the training dataset. Considering the training set, the same conclusions can be drawn here.
-The focus was mainly on the accuracy of results, but the precision and recall for the best models are reported as well since false positive predictions may be costly when a music label invests in a song that is actually unlikely to become a hit.
-
-<img width="475" alt="Screenshot 2023-05-18 at 19 46 59" src="https://github.com/FilippoGuardassoni/spotify_hitsong/assets/85356795/e4bfc124-b326-4150-b562-a9d66f783085">
+The aim of this paper is to create a model for the demand of new cars in the automotive market in the US and to lay the foundation for future studies.
+The analysis conducted investigated the relationship between the new auto sales and a set of explanatory variables such as the income of consumers, the gasoline price, and the prices of public transportation and insurance. The developed model respects the Law of Demand and Supply, since the findings suggest that the increase in prices reduce total sales of cars while the rise in income fosters total sales. The achieved results regarding the demand meet the expectations, however, the price elasticities in the short and in the long run are opposite to what past studies predicted.
+Besides having studied in depth the descripted relationship, this analysis allowed us to make inferences regarding the market landscape. In particular, we considered potential reasons behind the increase in car prices, the role of loans and interest rates as a mean used by the families to be able to afford new cars as well as a differentiated source of profit for car manufacturers, and possible policy concerns of the government related to the environment.
+In conclusion, the study of the automobile demand is fundamental in order to raise policy makers awareness in the issue of new regulations. In fact, they could not only jeopardize the efficiency of other regulations, but also trigger phenomena potentially dangerous for one of the biggest industries in the world which is the automotive as well as for the whole economy.
 
 
 # Future work
-This study aimed to predict whether a song will be a hit or not using features from Spotify API as a base. The first limitations come in play here. The definition of what a hit is inherently has constraints. This affects the composition of the dataset as well. A broader definition of hit could impact positively the research. In addition, the features are limited to the ones that Spotify API makes available. Other features for example of sound can be inserted such as bit depth and amplitude. Feature extraction and spectrogram analysis from the song audio files could be another successful approach. Subjective preferences, seasonality and time period might be taken in account as well. As instance, certain songs or genre such as Latin music are more likely to become hits in summer than in winter. Furthermore, particular characteristics in songs that made songs famous in the past are not a good guarantee for the future. While rock music dominated in the decades before 2000, nowadays electronic music took hold. Lyrics of a song could be considered to see if there are recurrencies, patterns or words that boost listening.
+The main limitations of our study are two: 1) The construction of the average of car and light trucks price variable and 2) the magnitude of our model. We were able to gather data only for annual average prices of car and light trucks. In order to proceed with our research, we made the strong assumption that monthly average auto prices would be equal to Annual Average divided by No. of Months. The fundamental difficulty in deriving a price variable for the model is that "the actual sales price or transactions price" between the auto dealer and the consumer is an unknown figure. While actual sales prices exist in the files of state revenue offices, the costs of extracting this information make it virtually inaccessible. We would recommend building a price function in order to correctly estimate the monthly average auto prices.
+An ideal Demand function would include a series of variables that need to be calculated that we omitted. For example, used car and automobile stock variables are needed to capture the alternatives for the consumers. In addition, a dummy for the ownership of a vehicle would help to estimate the choice of delaying the purchase of a new car. We performed a rudimental analysis considering the general landscape of the auto market in U.S; an improved version should divide the sales into brands and category of vehicles at the state level. Moreover, one can consider also categorical variables such as colour and size. Another strong limitation of our model was the use of indexes instead of actual values; ideally, functions to capture the trends in those variables should be created. The best method to do so is to conduct surveys. Lastly, to be more accurate, discretionary income, which is the money that an individual or a family has to invest, save, or spend after taxes and necessities are paid, would be a better variable to predict the sales trend.
 
 # Acknowledgments/References
 See report/song_hit_prediction.pdf for references.
