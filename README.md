@@ -18,7 +18,7 @@ From our model, price elasticity is greater than 1, meaning the reaction of the 
 Our main premise is that the price growth rate is greater than the disposable income growth rate, and this would lead to a decrease in the demand. Even if the price is not significant in our model, further research should be conducted in order to better predict the demand, to understand the relationship between price and income, and to investigate the role of interest rates and loans in the automobile industry.
 
 # Installation and Setup
-
+## Codes and Resources Used
 - Stata
 
 # Data
